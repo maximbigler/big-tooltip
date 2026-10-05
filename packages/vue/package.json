@@ -1,5 +1,5 @@
 {
-  "name": "@de.maximbigler/vue-big-tooltip",
+  "name": "@maximbigler/vue-big-tooltip",
   "version": "0.1.0",
   "description": "Tooltip directive, component and composable for Vue 3",
   "keywords": [
@@ -33,7 +33,11 @@
     "typecheck": "vue-tsc --noEmit -p tsconfig.build.json"
   },
   "dependencies": {
-    "@de.maximbigler/big-tooltip-core": "workspace:^"
+    "@maximbigler/big-tooltip-core": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "vue-tsc": "^3.3.11"
   },
   "peerDependencies": {
     "vue": "^3.5.0"

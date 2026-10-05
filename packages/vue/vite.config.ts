@@ -12,7 +12,7 @@ export default defineConfig({
       cssFileName: 'style', // Served as the package's `./style.css` export.
     },
     rollupOptions: {
-      external: ['vue', '@de.maximbigler/big-tooltip-core', '@floating-ui/dom'],
+      external: ['vue', '@maximbigler/big-tooltip-core', '@floating-ui/dom'],
     },
     sourcemap: true,
     minify: false,
