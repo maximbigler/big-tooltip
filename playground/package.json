@@ -7,7 +7,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@de.maximbigler/vue-big-tooltip": "workspace:*",
+    "@maximbigler/vue-big-tooltip": "workspace:*",
     "vue": "^3.5.0"
   }
 }
