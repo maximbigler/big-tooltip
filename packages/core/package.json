@@ -1,5 +1,5 @@
 {
-  "name": "@de.maximbigler/big-tooltip-core",
+  "name": "@maximbigler/big-tooltip-core",
   "version": "0.1.0",
   "description": "Framework-agnostic tooltip engine",
   "files": [

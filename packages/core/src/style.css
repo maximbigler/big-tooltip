@@ -1,0 +1,68 @@
+.tooltip {
+  --tooltip-background: #1f2937;
+  --tooltip-color: #f9fafb;
+  --tooltip-radius: 6px;
+  --tooltip-padding: 6px 10px;
+  --tooltip-font-size: 13px;
+  --tooltip-max-width: 260px;
+  --tooltip-z-index: 9999;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--tooltip-z-index);
+  width: max-content;
+  max-width: var(--tooltip-max-width);
+  padding: var(--tooltip-padding);
+  border-radius: var(--tooltip-radius);
+  background: var(--tooltip-background);
+  color: var(--tooltip-color);
+  font-size: var(--tooltip-font-size);
+  line-height: 1.4;
+  pointer-events: none;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip[data-interactive='true'] {
+  pointer-events: auto;
+}
+
+.tooltip[data-open='true'] {
+  opacity: 1;
+}
+.tooltip--light {
+  --tooltip-background: #ffffff;
+  --tooltip-color: #111827;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--tooltip-background);
+  transform: rotate(45deg);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip[data-placement^='top'] .tooltip-arrow {
+  bottom: -4px;
+}
+.tooltip[data-placement^='bottom'] .tooltip-arrow {
+  top: -4px;
+}
+.tooltip[data-placement^='left'] .tooltip-arrow {
+  right: -4px;
+}
+.tooltip[data-placement^='right'] .tooltip-arrow {
+  left: -4px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tooltip {
+    transition: opacity 120ms ease;
+  }
+}
