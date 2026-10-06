@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "import", "vue", "vitest"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn",
+    "pedantic": "off"
+  },
+  "env": { "browser": true, "es2024": true },
+  "ignorePatterns": ["**/dist/**", "**/coverage/**"],
+  "rules": {
+    "no-console": "warn",
+    "typescript/consistent-type-imports": "error",
+    "typescript/no-explicit-any": "error",
+    "import/no-cycle": "error",
+    "unicorn/prefer-global-this": "off",
+    "curly": ["error", "all"]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "playground/**"],
+      "rules": { "no-console": "off", "typescript/no-explicit-any": "off" }
+    }
+  ]
+}
