@@ -1,6 +1,6 @@
 {
   "name": "@maximbigler/big-tooltip-core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Framework-agnostic tooltip engine",
   "files": [
     "dist",
