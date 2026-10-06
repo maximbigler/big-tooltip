@@ -74,6 +74,7 @@ const { show, hide, isOpen } = useTooltip(anchor, { content: 'Hello there' });
 | theme       | `'default'`          | The theme which should be selected                        |
 | html        | `false`              | Enable html rendering at your own risk                    |
 | interactive | `false`              | Make the tooltip interactive, so it remains open on hover |
+| arrow       | `true`               | Show the arrow pointing to the anchor                     |
 | disabled    | `false`              | Disables the tooltip                                      |
 | triggers    | `['hover', 'focus']` | When it should be opened                                  |
 
