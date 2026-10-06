@@ -107,7 +107,7 @@ describe('Tooltip component', () => {
       global: { plugins: [[TooltipPlugin, { disabled: true }]] },
     });
     await hover(wrapper.element);
-    expect(findTip()).not.toBeNull();
+    expect(findTip()).toBeNull();
     wrapper.unmount();
   });
 
