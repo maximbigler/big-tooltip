@@ -8,6 +8,15 @@
     "vue",
     "vue3"
   ],
+  "homepage": "https://github.com/maximbigler/big-tooltip#readme",
+  "bugs": {
+    "url": "https://github.com/maximbigler/big-tooltip/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximbigler/big-tooltip.git",
+    "directory": "packages/vue"
+  },
   "files": [
     "dist"
   ],
