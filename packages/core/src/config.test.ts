@@ -12,6 +12,7 @@ describe('defaultConfig', () => {
       theme: 'default',
       html: false,
       interactive: false,
+      arrow: true,
       disabled: false,
       triggers: ['hover', 'focus'],
     });
