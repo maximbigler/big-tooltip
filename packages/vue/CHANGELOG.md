@@ -1,5 +1,13 @@
 # @maximbigler/vue-big-tooltip
 
+## 0.2.1
+
+### Patch Changes
+
+- [#9](https://github.com/maximbigler/big-tooltip/pull/9) [`4caf57d`](https://github.com/maximbigler/big-tooltip/commit/4caf57db504360aeb4d7851c1a1fc7dab33f9d25) Thanks [@maximbigler](https://github.com/maximbigler)! - Fix brocken release pipeline
+- Updated dependencies [[`4caf57d`](https://github.com/maximbigler/big-tooltip/commit/4caf57db504360aeb4d7851c1a1fc7dab33f9d25)]:
+  - @maximbigler/big-tooltip-core@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes
