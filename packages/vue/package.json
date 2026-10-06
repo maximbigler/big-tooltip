@@ -1,0 +1,45 @@
+{
+  "name": "@maximbigler/vue-big-tooltip",
+  "version": "0.0.0",
+  "description": "Tooltip directive, component and composable for Vue 3",
+  "keywords": [
+    "directive",
+    "tooltip",
+    "vue",
+    "vue3"
+  ],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@maximbigler/big-tooltip-core": "workspace:^"
+  },
+  "devDependencies": {
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "vue-tsc": "^3.3.11"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  }
+}
