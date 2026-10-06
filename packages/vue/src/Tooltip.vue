@@ -17,7 +17,13 @@ const props = withDefaults(
     triggers?: TooltipTrigger[];
     as?: string;
   }>(),
-  { as: 'span' },
+  {
+    as: 'span',
+    disabled: undefined,
+    interactive: undefined,
+    arrow: undefined,
+    html: undefined,
+  },
 );
 
 const anchor = useTemplateRef<HTMLElement>('anchor');
