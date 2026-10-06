@@ -1,5 +1,16 @@
 # @maximbigler/vue-big-tooltip
 
+## 0.2.0
+
+### Minor Changes
+
+- [#5](https://github.com/maximbigler/big-tooltip/pull/5) [`6540711`](https://github.com/maximbigler/big-tooltip/commit/6540711c907580dc355a5c7ad66ad0708c37b8a5) Thanks [@maximbigler](https://github.com/maximbigler)! - Add arrow option to hide the tooltip arrow
+
+### Patch Changes
+
+- Updated dependencies [[`6540711`](https://github.com/maximbigler/big-tooltip/commit/6540711c907580dc355a5c7ad66ad0708c37b8a5)]:
+  - @maximbigler/big-tooltip-core@0.2.0
+
 ## 0.1.0
 
 ### Minor Changes
