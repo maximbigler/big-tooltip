@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Tooltip, useTooltip } from '@maximbigler/vue-tooltip';
+import { Tooltip, useTooltip } from '@maximbigler/vue-big-tooltip';
 import { ref, useTemplateRef } from 'vue';
 
 const placement = ref<'top' | 'bottom' | 'left' | 'right'>('bottom');

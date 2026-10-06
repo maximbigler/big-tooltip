@@ -1,4 +1,4 @@
-import { TooltipPlugin } from '@maximbigler/vue-tooltip';
+import { TooltipPlugin } from '@maximbigler/vue-big-tooltip';
 import { createApp } from 'vue';
 import App from './App.vue';
 
