@@ -99,6 +99,16 @@ const { show, hide, isOpen } = useTooltip(manualAnchor, { content: 'composable t
         width="100"
       />
     </section>
+
+    <section>
+      <h2>Arrow</h2>
+      <Tooltip content="With arrow">
+        <button>Hover me</button>
+      </Tooltip>
+      <Tooltip content="Without arrow" :arrow="false">
+        <button>Hover me</button>
+      </Tooltip>
+    </section>
   </main>
 </template>
 

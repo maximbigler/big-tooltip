@@ -12,6 +12,7 @@ export interface TooltipConfig {
   theme: string;
   html: boolean;
   interactive: boolean;
+  arrow: boolean;
   disabled: boolean;
   triggers: TooltipTrigger[];
 }

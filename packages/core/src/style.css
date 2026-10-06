@@ -48,6 +48,10 @@
     0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.tooltip[data-arrow='false'] .tooltip-arrow {
+  display: none;
+}
+
 .tooltip[data-placement^='top'] .tooltip-arrow {
   bottom: -4px;
 }

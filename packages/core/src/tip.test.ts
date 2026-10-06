@@ -242,6 +242,15 @@ describe('triggers', () => {
     expect(tip.isOpen).toBe(false);
   });
 
+  it('marks the tip when the arrow is disabled', async () => {
+    const tip = createTip({ content: 'Hi', arrow: false });
+    await openTip(tip);
+    expect(findTip()?.dataset.arrow).toBe('false');
+
+    tip.update({ arrow: true });
+    expect(findTip()?.dataset.arrow).toBe('true');
+  });
+
   it('shows on focusin and hides on focusout by default', async () => {
     const tip = createTip();
     anchor.dispatchEvent(new Event('focusin'));

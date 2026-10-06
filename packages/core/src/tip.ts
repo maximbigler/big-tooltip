@@ -59,6 +59,7 @@ export function createTooltip(
     root.className = tipClassName(config.theme);
     root.dataset.placement = config.placement;
     root.dataset.interactive = String(config.interactive);
+    root.dataset.arrow = String(config.arrow);
     // Keeps the tip open while the pointer is over it; only reachable when interactive.
     root.addEventListener('pointerenter', show);
     root.addEventListener('pointerleave', hide);
@@ -159,6 +160,7 @@ export function createTooltip(
     }
     elements.root.className = tipClassName(config.theme);
     elements.root.dataset.interactive = String(config.interactive);
+    elements.root.dataset.arrow = String(config.arrow);
     renderContent();
     void updatePosition();
   }
