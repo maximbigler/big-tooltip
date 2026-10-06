@@ -12,11 +12,18 @@ const props = withDefaults(
     theme?: string;
     disabled?: boolean;
     interactive?: boolean;
+    arrow?: boolean;
     html?: boolean;
     triggers?: TooltipTrigger[];
     as?: string;
   }>(),
-  { as: 'span' },
+  {
+    as: 'span',
+    disabled: undefined,
+    interactive: undefined,
+    arrow: undefined,
+    html: undefined,
+  },
 );
 
 const anchor = useTemplateRef<HTMLElement>('anchor');
@@ -30,6 +37,7 @@ const config = computed(() => ({
   ...(props.theme ? { theme: props.theme } : {}),
   ...(props.disabled == null ? {} : { disabled: props.disabled }),
   ...(props.interactive == null ? {} : { interactive: props.interactive }),
+  ...(props.arrow == null ? {} : { arrow: props.arrow }),
   ...(props.html == null ? {} : { html: props.html }),
   ...(props.triggers ? { triggers: props.triggers } : {}),
 }));
